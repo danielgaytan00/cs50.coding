@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+:root {
+    --color1: white;
+    --color2: gray;
+    --background: #000000
+}
+
+body {
+    background-color: var(--background);
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    color: black;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items : center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container  {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.progress-container::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--color2);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%)
+}
+
+.progress {
+    background-color: var(--color1);
+    height: 4px;
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition: width 200ms ease;
+}
+
+.circle {
+    background-color: grey;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid darkgrey;
+
+}
+
+.circle.active {
+    border-color: var(--color1);
+    transition: 150ms ease;
+}
+
+.btn {
+    background-color: slategrey;
+    color: white;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    border: 0;
+    border-radius: .5em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 5ms;
+}
+
+.btn:active {
+    transform: scale(0.98)
+}
+
+.btn:disabled {
+    background-color: dimgrey;
+    cursor: not-allowed;
+}
