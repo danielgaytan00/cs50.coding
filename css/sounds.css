@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+    font-family: 'Paytone One', sans-serif;
+    background-color: #858383;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: #383737;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    transition: 100ms ease;
+}
+
+.btn:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+    border: 2px solid white;
+}

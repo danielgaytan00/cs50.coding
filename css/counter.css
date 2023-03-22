@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+body {
+    display: flex;
+    font-family: 'Anonymous Pro', monospace;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    color: white;
+    background-color: grey;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+    body {
+        flex-direction: column
+    }
+}
