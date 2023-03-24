@@ -15,4 +15,6 @@ body {
 div {
     position: absolute;
     bottom: 20px;
+    background: rgba(0,0,0,0.1);
+    padding: .5em;
 }
